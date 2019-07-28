@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Moringa</title>
+<link rel="stylesheet" href="moringa.css"  >
+<link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="moringa.js", type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="nav">
+        <p id="titleM">MORINGA</p>
+        <ol id=nav1>
+            <li><a id="DashbordMenu"><i class="fa fa-fw fa-home"></i> Dashbord</a></li>
+            <li><a id="clientsMenu"><i class="fa fa-fw fa-users"> </i> Clients </a></li>
+            <li><a id="usersMenu"><i class="fa fa-fw fa-user">       </i> Users   </a></li>
+        </ol>
+        <ol id="nav2">
+            <li><a id="collapse"><i class="fa fa-fw fa-caret-up">       </i> Collapse   </a></li>
+            <li><a><i class="fa fa-fw fa-sign-out">       </i> Logout   </a></li>
+        </ol>
+    </div>
+    <div id="dashbordTab" class='tab'>dashboard page</div>
+    <div id="usersTab" class='tab'>Users page</div>
+     <div id="main" class='tab'>
+        <div id="head">
+            <form class="input-icons">
+                    <i class="fa fa-search icon"></i> 
+                 <input id= "search"  type="text" value="Search Clients">
+            </form>
+            <button id="plus">+</button>
+            <label class="intake">New Intake</label>
+        </div>
+        <div id="clientInfo">
+            <div id="uploadImage">
+                    <p class="top">Unload</p>
+                    <p class="bottom">Image</p>
+            </div>
+            <div id="content">
+                <table>
+                    <tr>
+                        <td class="col1">Name:</td>
+                        <td>John Doe</td>
+                        <td class="col3">Next to Kin:</td>
+                        <td>Jane Doe</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="col1">Client Type:</td>
+                        <td>Parent</td>
+                        <td class="col3">Intake Date:</td>
+                        <td>05/22/2019</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Email:</td>
+                        <td>j.doe@outlook.ca</td>
+                        <td class="col3">Case Worker</td>
+                        <td>Danielle Barchyn</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Address:</td>
+                        <td class="column2">1180 Portage Ave, Wpg. Mb R3X 1B1</td>
+                        <td class="col3">Alerts:</td>
+                        <td class="green">None</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="col3">Status:</td>
+                        <td class="green">Active</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="col3">Precautions:</td>
+                        <td class="green">Do not meet alone</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="addInfo" >
+                <div id="menu">
+                    <button id="generalInfo" class="aMenu">General Information</button>
+                    <button id="placement"class="aMenu">Placement</button>
+                    <button id="familyTree" class="aMenu">Family Tree</button>
+                    <button id="assessment" class="aMenu">Assessment</button>
+                </div>
+                <div id="placementTab" class="tab">Placement</div>
+                <div id="familyTreeTab" class="tab">Family Tree</div>
+                <div id="assessmentTab" class="tab">Assessment</div>
+                <div id="generalTab">
+                    <form  class="formQa ">
+                            <p id="dob">Date of Birth</p>
+                            <input id="date" class="question" type="date" value=" ">
+                            <input id="howlong" class="question" type=text placeholder="How Long Have You Lived in The Home?">
+                            <input class="question" type=text placeholder="Who All Lives at Home?">
+                            <div id="liveTogether">
+                                <label>Living Together?</label>
+                                <input class="radio" type=radio name="who" value="Yes">
+                                <label class="forRadio">Yes</label>
+                                <input class="radio" type=radio name="who" value="No">
+                                <label class="forRadio">No</label>
+                            </div>    
+                            <input class="question" type=text placeholder="How Many People Live at Home?">
+                            <input class="question" type=text placeholder="First Nation Membership(If Applicable)">
+                            <input class="question" type=text placeholder="Are Your Children in Care?">
+                            <input id="save" type="submit" value="Save&Continue">
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>           
+   
+</body>
+
+</html>
